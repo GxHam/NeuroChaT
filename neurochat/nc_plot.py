@@ -350,6 +350,9 @@ def lfp_spectrum(plot_data, ax=None, color=None, style="Solid"):
     elif style == "Dashed":
         linewidth = 5
         linestyle = "dashed"
+    elif style == "Thin-Dashed":
+        linewidth = 2
+        linestyle = "dashed"
     else:
         print("Unknown style {} in lfp_spectrum, using Solid".format(
             style))
